@@ -1,0 +1,65 @@
+[
+	{
+		"name": "Account",
+        "url": "#",
+        "iconClass": "fa fa-cog fa-fw",
+        "id": "1",
+        "sub": [
+			{
+				"name": "Name",
+				"url": "#",
+				"iconClass": "fa fa-user"
+			},
+			{
+				"name": "Email Address",
+				"url": "#",
+				"iconClass": "fa fa-envelope-o"
+			},
+			{
+				"name": "Email Preferences",
+				"url": "#/about/address",
+				"iconClass": "fa fa-check"
+			},
+			{
+				"name": "Password",
+				"url": "#",
+				"iconClass": "fa fa-lock"
+			},
+			{
+				"name": "Logout",
+				"url": "#",
+				"iconClass": "fa fa-power-off"
+			}
+		]
+	},
+	{
+		"name": "Go Pro",
+        "url": "#",
+        "iconClass": "fa fa-graduation-cap",
+        "id": ""
+	},
+	{
+		"name": "Manage Elements",
+        "url": "#",
+        "iconClass": "fa fa-lightbulb-o",
+        "id": ""
+	},
+	{
+		"name": "Change Logo",
+        "url": "#",
+        "iconClass": "fa fa-code",
+        "id": ""
+	},
+	{
+		"name": "Change Design",
+        "url": "#",
+        "iconClass": "fa fa-arrows-h",
+        "id": ""
+	},
+	{
+		"name": "Publish",
+        "url": "#",
+        "iconClass": "fa fa-download",
+        "id": ""
+	}
+]

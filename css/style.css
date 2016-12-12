@@ -1,0 +1,661 @@
+/*
+**  Theme Name: Responsive Bootstrap
+**  Author: Trung Nguyen
+*/
+html, body {
+    overflow-x: hidden;
+    min-width: 320px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body{
+  background-color: #eeeeee; /* Dynamic */
+}
+img{
+    max-width: 100%;
+}
+#header .mobile {
+    display: none;
+}
+.container{
+    max-width: 970px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container>* {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+html.ie .wc_common .container {
+    max-width: 940px;
+}
+.wc_common{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+#header{
+    width: auto;
+    background-color: #dddddd; /* Dynamic */
+    padding: 20px 0;
+    overflow: visible;
+    border-bottom: 4px solid #b8b9b3; /* Dynamic */
+}
+#footer{
+    width: auto;
+    background-color: #dddddd; /* Dynamic */
+    padding: 20px 0;
+    border-top: 4px solid #b8b9b3; /* Dynamic */
+}
+#header .container {
+  position: relative;
+}
+#header .row{
+    text-align: left; /* Dynamic, Horiz Logo Pos */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#logo a, #mobile-logo a {
+  float: left;
+}
+#logo img{
+  height: 100px;
+}
+#logo{
+    margin: 0 -20px;
+}
+.greet {
+  min-height: 0px;
+  text-align: right; /* Dynamic, Greet Horiz Pos */
+  padding-left: 0;
+  padding-right: 0;
+  color: #444444; /* Dynamic */
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+.greetings, .wifi {
+  display: inline-block;
+}
+.greetings{
+    text-align: right;
+    text-transform: none;
+}
+.greetings p{
+    font-size: 1em;
+    margin: 0;
+}
+.lang-selector{
+    margin: 30px 0 0 0;
+}
+.lang-selector .form-control{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background: #282828;
+    border: 1px solid #282828;
+    color: #fff;
+}
+.lang-selector .form-control:focus{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+#body-section{
+    background: transparent;
+    padding: 20px 0;
+}
+#banner1,
+#banner2{
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+#banner3 img.medium{
+    display: block;
+}
+#banner3 img.small{
+    display: none;
+}
+#banner1{
+    overflow: visible;
+}
+#body-section .container>div, #body-section .container .min-height>div{
+    position: relative;
+    margin-top: 20px;
+}
+#body-section .container .min-height{
+    min-height: 80px;
+}
+#body-section .container>div, #body-section .container .min-height>div, #body-section .adContainer {
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow:    0px 0px 20px 0px rgba(0, 0, 0, 1);
+    box-shadow:         0px 0px 20px 0px rgba(0, 0, 0, 1);
+}
+#body-section .container .min-height, #banner1, .widgets{
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow:    none !important;
+    box-shadow:         none !important;
+}
+#body-section .container>div:first-child {
+    margin-top: 0;
+}
+#body-section .container .min-height>div:first-child {
+    margin-top: 0;
+}
+#newsfeed{
+    margin-top: 20px;
+}
+#newsfeed .news_feed_logo, #newsfeed .news_feed_text{
+    display: inline-block;
+}
+#newsfeed .news_feed_logo{
+    vertical-align: text-bottom;
+}
+#newsfeed p.news_feed_text{
+  margin: 0 0 0 0.25em;
+}
+p.news_feed_text, .news_feed_text a,
+.copyright a{
+  color: #d51808; /* Dynamic */
+}
+.news_feed_text a, .copyright a{
+    text-decoration: underline;
+}
+#footer .container {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  /*min-height: 115px;*/
+  /*padding-bottom: 20px;*/
+}
+.copyright{
+    color: #444444; /* Dynamic */
+    font-size: 0.7em;
+    text-transform: none;
+}
+.copyright a:hover{
+    color: #444444;  /* Dynamic */
+}
+#footer .bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Widgets */
+.widgets {
+  width: 100%;
+  float: left;
+}
+.widget-container {
+  width: 50%;
+  float: left;
+}
+.widget-container-wide {
+  width: 100%;
+}
+.widget-container.odd .widget {
+  margin-right: 10px;
+}
+.widget-container.even .widget {
+  margin-left: 10px;
+}
+.widget {
+  position: relative;
+  padding-bottom: 72%;
+  background-color: gold;
+}
+.widget-container-wide .widget {
+  padding-bottom: 12.4%;
+  max-height: 100px;
+}
+
+#gm-widget .widget {
+  height: 4.5em;
+  padding-bottom: 0 !important;
+  background-color: firebrick;
+}
+
+.widget-container .widget>*,
+.widget-container-wide .widget>*,
+.mojaggallery div{
+  background: white;
+  opacity: 0.8;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+#social .widget {
+  height: 40px;
+  padding-bottom: 0 !important;
+  background-color: darkgreen;
+}
+#hotel-banner .widget {
+  background-color: darkblue;
+  min-height: 200px;
+}
+
+/* TEMP */
+.mojaggallery {
+  background-color: darkblue;
+}
+.holder {
+  background-color: white;
+  width: 100%;
+}
+.mojaggallery.desktop.wide {
+  padding-bottom: 42.8%;
+}
+.mojaggallery.desktop.square {
+  width: 50%;
+  float: left;
+}
+.widget>div,
+.mojaggallery div {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* TEMP */
+
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src:    url("http://d10g66oj25kfp1.cloudfront.net/fonts/fontawesome-webfont.eot?") format('eot'),
+          url("http://d10g66oj25kfp1.cloudfront.net/fonts/fontawesome-webfont.woff2") format('woff2'),
+          url("http://d10g66oj25kfp1.cloudfront.net/fonts/fontawesome-webfont.woff") format('woff'),
+          url("http://d10g66oj25kfp1.cloudfront.net/fonts/fontawesome-webfont.ttf") format('truetype'),
+          url("http://d10g66oj25kfp1.cloudfront.net/fonts/fontawesome-webfont.svg#FontAwesome") format('svg');
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+.fa-5x {
+  font-size: 5em;
+}
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+.rslides a {
+    display: block;
+    color: #ffffff;
+}
+.strapline {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: left;
+    font-size: 3em;
+    line-height: 1.5em;
+}
+.strapline span {
+    display: block;
+}
+.strapline .straptext {
+    z-index: 2;
+    position: relative;
+    top: 0;
+    left: 0;
+    vertical-align: middle;
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-transform: none;
+    text-shadow: 1px 1px 2px #000000;
+}
+.strapline .subtext {
+    text-transform: uppercase;
+    font-size: 0.4em;
+    line-height: 1.1em;
+}
+.strapline .valigned {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 40px;
+}
+.strapline .centered {
+    width: 94%;
+    margin: 0 auto;
+}
+.rslides .overlay {
+    z-index: 1;
+    background: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    zoom: 1;
+    border: 10px solid transparent;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    -moz-opacity:0.2;
+    -khtml-opacity: 0.2;
+    opacity: 0.2;
+}
+.fontGB-loaded .gothambook {
+    font-family: 'GothamBookRegular', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GothamBookRegular";
+    src:  url("http://d10g66oj25kfp1.cloudfront.net/fonts/gotham-book-webfont.eot?") format('eot'),
+          url("http://d10g66oj25kfp1.cloudfront.net/fonts/gotham-book-webfont.woff") format('woff'),
+          url("http://d10g66oj25kfp1.cloudfront.net/fonts/gotham-book-webfont.ttf") format('truetype'),
+          url("http://d10g66oj25kfp1.cloudfront.net/fonts/gotham-book-webfont.svg#GothamBookRegular") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Custom responsive styles */
+
+@media only screen and (max-width: 1000px){
+    .container {
+        width: auto;
+        margin: 0 20px;
+    }
+    #body-section .container {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    #header .greetings{
+        right: 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .copyright{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    body {
+        font-size: 14px;
+    }
+    .container>* {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    #body-section{
+        padding: 15px 0;
+    }
+    #body-section .container>div, #body-section .container .min-height>div{
+        margin-top: 15px;
+    }
+    .container{
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0 15px;
+    }
+    #logo img{
+        height: 75px;
+    }
+    .lang-selector{
+        margin: 15px 0 0 0;
+    }
+    #footer{
+        padding: 15px 0;
+    }
+    .copyright {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .copyright p{    
+        /*text-align: center;*/
+    }
+    .sm-wrapper {
+        /*max-width: 300px;*/
+        margin: 0 auto;
+    }
+    .strapline .valigned {
+        padding-bottom: 35px;
+    }
+    .widget-container {
+      width: 100%;
+      float: left;
+      margin-top: 15px;
+    }
+    .widget {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding-bottom: 20% !important;
+    }
+    .widgets>.widget-container:first-child {
+      margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 666px){
+    #banner3 img.medium{
+        display: none;
+    }
+    #banner3 img.small{
+        display: block;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .mobile {
+        display: inline-block;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+    .mobile span {
+       /* line-height: 12px;
+        font-size: 12px;*/
+    }
+    #header {
+        margin: 0;
+        padding: 10px;
+    }
+    #header .container{
+        /*max-width: 320px;*/
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #header .row {
+        height: 50px;
+        margin: 0;
+        text-align: right;
+        position: relative;
+    }
+    #header .col-sm-12 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #header .mobile, #header .col-sm-12, .greetings {
+        display: inline-block;
+    }
+    #header .mobile {
+        height: 100%;
+        vertical-align: bottom;
+        width: 0px;
+        background: green;
+    }
+    .mobile #mobile-logo {
+        position: absolute;
+        left: 0;
+        font-size: 1px;
+        line-height: 1px;
+        margin: 0;
+    }
+    #mobile-logo img {
+        height: 50px;
+    }
+    #header .logo {
+        display: none;
+    }
+    #header .wifi {
+        display: inline !important;
+        margin-right: 0.5em;
+    }
+    #header .wifi, #header .greetings {
+        font-size: 14px;
+    }
+    .greet {
+      position: relative;
+      bottom: 0;
+    }
+    .strapline .valigned {
+        padding-bottom: 30px;
+    }
+    #footer .container {
+      min-height: 85px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .strapline {
+      font-size: 2.5em;
+    }
+    .strapline .valigned {
+        padding-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #body-section{
+        padding: 10px 0;
+    }
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .container>* {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    #body-section .container>div, #body-section .container .min-height>div{
+        margin-top: 10px;
+    }
+    #header .logo{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #logo{
+        padding: 10px 0;
+    }
+    #logo img{
+        width: 150px;
+    }
+    .row {
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+    .widget-container {
+      margin-top: 10px;
+    }
+}
+
+
+/* Styles for responsive ad containers */
+
+div.adContainer {
+  text-align: center;
+  line-height: 0;
+  max-width: 970px; /* Top limit for responsive ad */
+  margin-left: auto;
+  margin-right: auto;
+}
+.embed-responsive-billboard {
+  padding-bottom: 25.78%;
+}
+.embed-responsive-billboard iframe {
+  width: 970px;
+  height: 250px;
+}
+.embed-responsive-main {
+  padding-bottom: 42.78%;
+}
+.embed-responsive-main iframe {
+  width: 970px;
+  height: 415px;
+}
+.embed-responsive-16_9 {
+    padding-bottom: 56.25%;
+}
+.embed-responsive-4_3 {
+    padding-bottom: 75%;
+}
+.embed-responsive {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+.embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0px none !important;
+  overflow: hidden;
+  -ms-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+/* MPU only Ad */
+/*@media only screen and (max-width: 969px) {
+  div.adContainer.tablet.portrait {
+    display: block;
+  }
+  div.adContainer.tablet.landscape {
+    display: none;
+  }
+}
+/* Billboard only Ad */
+/*@media only screen and (min-width: 970px) {
+  div.adContainer.tablet.portrait {
+    display: none;
+  }
+  div.adContainer.tablet.landscape {
+    display: block;
+  }
+}
+*/
+/*div.adContainer.tablet.embed-responsive {
+  display: block;
+}
